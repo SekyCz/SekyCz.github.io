@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.norton.fw",
+      "sha256_cert_fingerprints":
+        ["FC:24:97:BA:88:99:E8:7E:9D:52:B7:3B:CC:58:21:AF:C3:05:F2:9F:A6:B3:44:F1:BD:58:43:96:1F:98:DF:0F"]
+    }
+  }
+]
