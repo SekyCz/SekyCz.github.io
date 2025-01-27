@@ -3,25 +3,29 @@
   <head>
     <title>Open Link in App</title>
 
-    <!-- Option 2: Smart Banner for "Open in App" -->
-    <meta name="al:android:url" content="https://sekycz.github.io/private">
-    <meta name="al:android:package" content="com.norton.fw">
-    <meta name="al:android:app_name" content="Fw">
+    <script>
+      // JavaScript fallback: Open the app if possible
+      function openApp() {
+        window.location.href = "intent://sekycz.github.io/private#Intent;scheme=https;package=com.norton.fw;end;";
+      }
+    </script>
   </head>
   <body>
     <p>
       Click below to open in the app:
     </p>
 
-    <!-- Option 1: Intent-based link to force opening the app -->
+    <!-- Option 1: Intent-based link (force open the app) -->
     <p>
       <a href="intent://sekycz.github.io/private#Intent;scheme=https;package=com.norton.fw;end;">
-        Open in App
+        Open in App (Intent Link)
       </a>
     </p>
 
+    <!-- Option 2: JavaScript button to open app -->
     <p>
-      If the app does not open, install it from the <a href="https://play.google.com/store/apps/details?id=com.yourapp.package">Google Play Store</a>.
+      <button onclick="openApp()">Open in App (JavaScript)</button>
     </p>
+
   </body>
 </html>
