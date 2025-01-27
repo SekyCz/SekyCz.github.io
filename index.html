@@ -1,15 +1,27 @@
 <!doctype html>
 <html>
   <head>
-    <title>This is the title of the webpage!</title>
+    <title>Open Link in App</title>
+
+    <!-- Option 2: Smart Banner for "Open in App" -->
+    <meta name="al:android:url" content="https://sekycz.github.io/private">
+    <meta name="al:android:package" content="com.norton.fw">
+    <meta name="al:android:app_name" content="Fw">
   </head>
   <body>
     <p>
-      This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this
-      <strong>p</strong> tag and its contents.
+      Click below to open in the app:
     </p>
+
+    <!-- Option 1: Intent-based link to force opening the app -->
     <p>
-      <a href="https://sekycz.github.io/private">Go to Private Page</a>
+      <a href="intent://sekycz.github.io/private#Intent;scheme=https;package=com.norton.fw;end;">
+        Open in App
+      </a>
+    </p>
+
+    <p>
+      If the app does not open, install it from the <a href="https://play.google.com/store/apps/details?id=com.yourapp.package">Google Play Store</a>.
     </p>
   </body>
 </html>
