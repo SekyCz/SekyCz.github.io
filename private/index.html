@@ -3,25 +3,21 @@
   <head>
     <title>Open Link in App</title>
     <script>
-      // JavaScript fallback: Open the app if possible
-      function openApp() {
+      // Automatically redirect to the intent on page load
+      window.onload = function() {
         window.location.href = "intent://my-int.norton.com/extspa/money/onboarding#Intent;scheme=norton-money;package=com.norton.money.finance;end;";
-      }
+      };
     </script>
   </head>
   <body>
-    <p>Click below to open in the app:</p>
+    <p>Redirecting to the app...</p>
+    <p>If the app does not open, click below:</p>
 
     <!-- Option 1: Intent-based link (force open the app) -->
     <p>
       <a href="intent://my-int.norton.com/extspa/money/onboarding#Intent;scheme=norton-money;package=com.norton.money.finance;end;">
         Open in App (Intent Link)
       </a>
-    </p>
-
-    <!-- Option 2: JavaScript button to open app -->
-    <p>
-      <button onclick="openApp()">Open in App (JavaScript)</button>
     </p>
 
     <p>
